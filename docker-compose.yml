@@ -9,7 +9,7 @@ services:
       - "8000:8000"
     image: app:django
     container_name: django_container
-    command: python manage.py runserver 178.21.10.183:8000
+    command: python manage.py runserver
     depends_on:
       - db
   db:
